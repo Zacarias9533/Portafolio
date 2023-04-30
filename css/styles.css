@@ -1,0 +1,23 @@
+/* INTENTO DE FLEXBOX */
+
+.flex-main,
+.flex-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.botones,
+.boton {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/*************************/
+
+.texto-encriptar {
+  width: auto;
+}
+
+
