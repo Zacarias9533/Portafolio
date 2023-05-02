@@ -16,27 +16,35 @@
 
     <main class="flex-main">
       <div class="texto">
-        <textarea name="area" class="texto-encriptar" rows="30" cols="55">
-Ingresar texto aqui</textarea>
+        <textarea
+      placeholder="Ingrese el texto en minuscula, sin caracteres especiales ni acentos."
+          name="area"
+          class="texto-encriptar"
+          id="area-encriptado"
+          rows="30"
+          cols="55"
+        ></textarea>
       </div>
 
       <div class="botones">
-        <button>Encriptar</button>
-        <button>Desencriptar</button>
+        <button id="boton-encriptar">Encriptar</button>
+        <button id="boton-desencriptar">Desencriptar</button>
       </div>
     </main>
 
     <aside class="flex-sidebar">
       <div class="encriptado">
         <textarea
+          readonly
           name="area2"
           class="texto-encriptar"
+          id="area-resultado"
           rows="30"
           cols="30"
         ></textarea>
       </div>
-      <div class="boton-copiar">
-        <button>Copiar</button>
+      <div class="boton">
+        <button id="boton-copiar">Copiar</button>
       </div>
     </aside>
 
