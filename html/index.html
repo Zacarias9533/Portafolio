@@ -5,50 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/grid.css" />
     <link rel="stylesheet" href="../css/styles.css" />
+
+    <script defer src="../js/codigo.js" type="module"></script>
 
     <title>Encriptador de texto</title>
   </head>
 
   <body class="contenedor-grid">
-    <header class="header">Logo y boton de modo nocturno</header>
+    <header class="header">
+      <img src="/imagenes/EZLogoGris.png" alt="logo del programador" class="logo-header" hidden>
+
+    </header>
 
     <main class="flex-main">
-      <div class="texto">
-        <textarea
-      placeholder="Ingrese el texto en minuscula, sin caracteres especiales ni acentos."
-          name="area"
-          class="texto-encriptar"
-          id="area-encriptado"
-          rows="30"
-          cols="55"
-        ></textarea>
-      </div>
-
+      <p id="txt-ini">Ingresa tu texto aquí...</p>
+      <textarea
+        class="encriptar"
+        name="text-encr"
+        id="area-encriptado"
+        placeholder="Ingresa solo letras minusculas y sin acentos."
+      ></textarea>
       <div class="botones">
-        <button id="boton-encriptar">Encriptar</button>
+        <button id="boton-encriptar">
+          <p class="txt-encriptar">Encriptar</p>
+          <img class="flecha" src="/imagenes/icono-Flecha.png" />
+        </button>
         <button id="boton-desencriptar">Desencriptar</button>
       </div>
     </main>
 
     <aside class="flex-sidebar">
-      <div class="encriptado">
-        <textarea
-          readonly
-          name="area2"
-          class="texto-encriptar"
-          id="area-resultado"
-          rows="30"
-          cols="30"
-        ></textarea>
-      </div>
-      <div class="boton">
-        <button id="boton-copiar">Copiar</button>
-      </div>
+      <textarea name="test-res" id="area-resultado" readonly hidden></textarea>
+
+      <img
+        class="img-encriptada"
+        id="img-aside"
+        src="/imagenes/img-resultado"
+      />
+      <p id="texto-img-resultado" class="parrafo-aside">
+        Ningun mensaje <br />fue encontrado
+      </p>
+      <p id="texto-img-blanco" class="parrafo-aside">
+        Ingresa el texto que desees encriptar<br />
+        o Desencriptar
+      </p>
+      <!-- </div> -->
+      <button id="boton-copiar" hidden>¡Copiar!</button>
     </aside>
 
-    <footer class="footer">Informacion diseñador y programador</footer>
-    <script src="../js/codigo.js" type="module"></script>
+    <footer class="footer">
+      <div class="container-rs">
+        <a href="https://www.linkedin.com/in/erick-zacarias/" target="_blank"
+          ><img
+            src="/imagenes/img-lkdn"
+            alt="logo de linkedin"
+            id="img-lnkdn"
+            class="redes-sociales"
+        /></a>
+
+        <a href="https://www.facebook.com/erick.zacarias.92102/" target="_blank"
+          ><img
+            src="/imagenes/img-fb"
+            alt="logo de facebook"
+            id="img-fb"
+            class="redes-sociales"
+        /></a>
+
+        <a href="https://www.instagram.com/erick_azm/" target="_blank"
+          ><img
+            src="/imagenes/img-insta"
+            alt="logo de instagram"
+            id="img-insta"
+            class="redes-sociales"
+        /></a>
+
+        <a href="https://github.com/Zacarias9533" target="_blank"
+          ><img
+            src="/imagenes/logo-github"
+            alt="logo github"
+            class="redes-sociales"
+        /></a>
+      </div>
+      <img
+        src="/imagenes/EZLogo.png"
+        alt="imagen del logo del programador"
+        class="img-logo"
+      />
+    </footer>
   </body>
 </html>
