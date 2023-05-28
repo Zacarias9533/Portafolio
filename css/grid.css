@@ -19,21 +19,21 @@ body {
 }
 
 .header {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   grid-area: header;
 }
 .flex-main {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   grid-area: main;
 }
 
 .flex-sidebar {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   grid-area: sidebar;
 }
 
 .footer {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   grid-area: footer;
 }
 
@@ -47,22 +47,117 @@ body {
 }
 
 @media all and (min-width: 768px) {
-  .contenedor-grid {
-    grid-template:
-    "header" 5%
-    "main" 55%
-    "sidebar" auto
-    "footer" 5%;
+  html {
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(
+      180deg,
+      rgba(230, 230, 230, 1) 50%,
+      rgba(250, 172, 48, 1) 65%
+    );
   }
 
+  #boton-encriptar,
+  #boton-desencriptar,
+  #boton-copiar {
+    font-size: 2rem;
+    width: 15rem;
+    height: 3rem;
+  }
+
+  .img-encriptada {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  #texto-img-blanco {
+    font-size: 1.2rem;
+  }
+
+  #texto-img-resultado {
+    font-size: 2rem;
+  }
+
+  .contenedor-grid {
+    grid-template:
+      "header" 5%
+      "main" 55%
+      "sidebar" auto
+      "footer" 0%;
+  }
+
+  .flex-sidebar,
+  .flex-main {
+    margin: 2rem;
+  }
+
+  footer {
+    display: none;
+  }
+
+  #txt-ini {
+    font-size: 2.5rem;
+    /* background-color: #808080; */
+  }
+  .encriptar::placeholder {
+    font-size: 1.3rem;
+  }
+
+  .flex-sidebar {
+    box-shadow: 0 0 0.15rem #1c1c1f;
+  }
+
+  .flex-main {
+    box-shadow: 0 0 0.15rem #808080;
+    border-radius: 10px;
+  }
 }
 
 @media all and (min-width: 1366px) {
   .contenedor-grid {
     grid-template:
-      "header  header" 10%
+      "header  header" 5%
       "main    sidebar" auto
-      "footer  footer" 10% /
+      "footer  footer" 5% /
       auto 30%;
+  }
+
+  html {
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(90deg, #e6e6e6 70%, rgba(250, 172, 48, 1) 90%);
+  }
+
+  #boton-encriptar,
+  #boton-desencriptar,
+  #boton-copiar {
+    font-size: 2.5rem;
+    width: 20rem;
+    height: 4rem;
+  }
+  footer {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-rs {
+    /* border: 1px solid black; */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .redes-sociales {
+    height: 170%;
+  }
+
+  .flecha {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 0.5rem;
+    margin-left: 1.8rem;
   }
 }

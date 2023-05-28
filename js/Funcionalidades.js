@@ -5,6 +5,7 @@ var encriptado = ["enter", "imes", "ai", "ober", "ufat"];
 
 export function encriptar() {
   var cadena = capturarTexto();
+  document.getElementById("boton-copiar").style.display = "block";
 
   validar(cadena);
 
@@ -17,6 +18,8 @@ export function encriptar() {
 
 export function desencriptar(cadena) {
   var cadena = capturarTexto();
+  document.getElementById("boton-copiar").style.display = "block";
+
   validar(cadena);
 
   for (let i = 0; i < cadena.length; i++) {
@@ -85,8 +88,7 @@ function vistaDefault() {
 function vistaInput() {
   document.getElementById("txt-ini").style.display = "none";
   document.getElementById("img-aside").style.display = "none";
-  document.getElementById("texto-img-resultado").style.display = "none";
   document.getElementById("texto-img-blanco").style.display = "none";
-  document.getElementById("boton-copiar").style.display = "block";
+  document.getElementById("texto-img-resultado").style.display = "none";
   document.getElementById("area-resultado").style.display = "block";
 }

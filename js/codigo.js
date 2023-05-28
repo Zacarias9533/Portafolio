@@ -4,6 +4,7 @@ var e = document.getElementById("boton-encriptar");
 var de = document.getElementById("boton-desencriptar");
 var c = document.getElementById("boton-copiar");
 var ae = document.getElementById("area-encriptado");
+var dm = document.getElementsByClassName("modo-obscuro");
 
 e.addEventListener("click", funcion.encriptar);
 

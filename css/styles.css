@@ -10,18 +10,11 @@
 }
 
 html {
-  background: linear-gradient(
-    90deg,
-    rgba(230, 230, 230, 1) 70%,
-    rgba(250, 172, 48, 1) 90%
-  );
+  background: linear-gradient(180deg, #e6e6e6 70%, rgba(250, 172, 48, 1) 90%);
   /* padding-right: 15px; */
 }
 
 /*******************VISTA WEB*****************************/
-.logo-header{
-  display:none;
-}
 
 .flex-main {
   display: flex;
@@ -49,10 +42,10 @@ html {
 
 #txt-ini {
   position: absolute;
-  font-size: 3rem;
+  font-size: 1.5rem;
   text-align: left;
   margin-top: 2.5rem;
-  margin-left: 3.7rem;
+  margin-left: 1.8rem;
   color: var(--color-secundario);
   font-weight: 600;
 }
@@ -83,10 +76,10 @@ html {
 }
 
 .encriptar::placeholder {
-  padding-left: 0.1rem;
+  padding-left: 0.5rem;
   font-weight: 300;
   color: var(--color-indicaciones);
-  font-size: 0.95rem;
+  font-size: 0.8rem;
 }
 
 .encriptar::-webkit-scrollbar {
@@ -132,8 +125,8 @@ html {
   border: 2px solid var(--color-secundario);
 }
 .img-encriptada {
-  height: 15rem;
-  width: 15rem;
+  height: 10rem;
+  width: 10rem;
 }
 
 .img-txt-result {
@@ -165,13 +158,13 @@ html {
 #boton-desencriptar,
 #boton-copiar {
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: white;
-  height: 3rem;
+  height: 2rem;
   margin-top: 0.5rem;
   border: none;
   border-radius: 50px;
-  width: 13.5rem;
+  width: 10rem;
   font-weight: 600;
 }
 
@@ -181,6 +174,7 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: end;
+  transition: 0.5s;
 }
 
 #boton-encriptar:hover {
@@ -196,6 +190,7 @@ html {
 
 #boton-desencriptar {
   background-color: var(--color-negro);
+  transition: 0.5s;
 }
 
 #boton-desencriptar:hover {
@@ -206,6 +201,7 @@ html {
   background-color: transparent;
   border: 1px solid var(--color-negro);
   color: var(--color-negro);
+  transition: 0.5s;
   /* font-weight: bold; */
 }
 
@@ -215,7 +211,8 @@ html {
 }
 
 footer {
-  display: flex;
+  display: none;
+  /* display: flex; */
   justify-content: display flex-start;
   align-items: center;
   align-items: baseline;
@@ -239,62 +236,3 @@ footer {
   margin-right: 2.5rem;
 }
 /***************************MEDIA QUERIES***************************/
-
-/***************************VISTA TABLET***************************/
-
-/* @media all and  (min-width: 768px){   
-
-  .flex-main, .flex-sidebar, header, footer{
-    width: 100%;
-  }
-  .logo-header{
-    display: block;
-    float: right;
-    height: 100%;
-  }
-  #txt-ini{
-    font-size: 2.5rem;
-    background-color: #808080;
-  }
-  .encriptar::placeholder {  
-    font-size: 1rem;
-  }
- html{
-   background: linear-gradient(
-     180deg,
-     rgba(230, 230, 230, 1) 55%,
-     rgba(250, 172, 48, 1) 65%
-   );
- }
-
- .flex-sidebar, .flex-main{
-  margin: 0 1rem 0 1rem;
- }
-
- footer{
-  display:none;
- }
-}
-
-@media all and (min-width: 1366px) {
-  html{
-    background: linear-gradient(
-      90deg,
-      rgba(230, 230, 230, 1) 70%,
-      rgba(250, 172, 48, 1) 80%
-    );}
-  footer{
-    display: block;
-  }
-  .logo-header{
-    display: none;
-  }
-  #area-resultado{
-    height: auto;
-    width: auto;
-  }
-  #txt-ini{
-    background-color: aqua;
-  }
-
-}  */
